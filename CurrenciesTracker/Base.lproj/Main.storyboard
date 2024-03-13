@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrenciesTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="4xQ-gK-wW0">
+                                <rect key="frame" x="20" y="78" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4xQ-gK-wW0" secondAttribute="height" multiplier="1:1" id="AcS-hy-i8A"/>
+                                    <constraint firstAttribute="height" constant="70" id="aQG-Ei-6i9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-Ts-8Px">
+                                <rect key="frame" x="110" y="99.666666666666671" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ETH" translatesAutoresizingMaskIntoConstraints="NO" id="w8x-fq-Fv8">
+                                <rect key="frame" x="16" y="156" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w8x-fq-Fv8" secondAttribute="height" multiplier="1:1" id="7K0-YF-vBN"/>
+                                    <constraint firstAttribute="height" constant="70" id="xxl-IM-t7a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9N-CG-26J">
+                                <rect key="frame" x="106" y="178" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="G1i-42-eBc">
+                                <rect key="frame" x="16" y="234" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G1i-42-eBc" secondAttribute="height" multiplier="1:1" id="fYQ-E3-Zrt"/>
+                                    <constraint firstAttribute="height" constant="70" id="row-Ia-6Zx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-e3-1mo">
+                                <rect key="frame" x="106" y="255" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-s5-S9g">
+                                <rect key="frame" x="134" y="425" width="125" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w8x-fq-Fv8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Ad-SV-oMP"/>
+                            <constraint firstItem="h9N-CG-26J" firstAttribute="leading" secondItem="w8x-fq-Fv8" secondAttribute="trailing" constant="20" id="0VB-ys-Ztb"/>
+                            <constraint firstItem="AmD-e3-1mo" firstAttribute="centerY" secondItem="G1i-42-eBc" secondAttribute="centerY" id="B6i-7d-BbJ"/>
+                            <constraint firstItem="w8x-fq-Fv8" firstAttribute="top" secondItem="4xQ-gK-wW0" secondAttribute="bottom" constant="27" id="Fgk-rH-PYe"/>
+                            <constraint firstItem="h9N-CG-26J" firstAttribute="centerY" secondItem="w8x-fq-Fv8" secondAttribute="centerY" id="GSY-H3-xYR"/>
+                            <constraint firstItem="4xQ-gK-wW0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="NHe-N7-Brs"/>
+                            <constraint firstItem="6rj-Ts-8Px" firstAttribute="leading" secondItem="4xQ-gK-wW0" secondAttribute="trailing" constant="20" id="SwQ-kS-saP"/>
+                            <constraint firstItem="S9a-s5-S9g" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Tv5-uF-JSz"/>
+                            <constraint firstItem="S9a-s5-S9g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xmm-3s-6eQ"/>
+                            <constraint firstItem="AmD-e3-1mo" firstAttribute="leading" secondItem="G1i-42-eBc" secondAttribute="trailing" constant="20" id="YHo-xK-eUg"/>
+                            <constraint firstItem="4xQ-gK-wW0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YOF-iC-5jB"/>
+                            <constraint firstItem="G1i-42-eBc" firstAttribute="width" secondItem="G1i-42-eBc" secondAttribute="height" multiplier="1:1" id="YqO-J8-UML"/>
+                            <constraint firstItem="w8x-fq-Fv8" firstAttribute="width" secondItem="w8x-fq-Fv8" secondAttribute="height" multiplier="1:1" id="dQK-mG-ONu"/>
+                            <constraint firstItem="S9a-s5-S9g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dtk-Q6-mBt"/>
+                            <constraint firstItem="G1i-42-eBc" firstAttribute="top" secondItem="w8x-fq-Fv8" secondAttribute="bottom" constant="23" id="mZz-o1-3OJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S9a-s5-S9g" secondAttribute="bottom" constant="366" id="oMN-bn-TFq"/>
+                            <constraint firstItem="G1i-42-eBc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pxQ-mC-QtE"/>
+                            <constraint firstItem="6rj-Ts-8Px" firstAttribute="centerY" secondItem="4xQ-gK-wW0" secondAttribute="centerY" id="qiy-pN-c4E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btcPrice" destination="6rj-Ts-8Px" id="Tzg-Er-22U"/>
+                        <outlet property="ethPrice" destination="h9N-CG-26J" id="Ogx-jb-fID"/>
+                        <outlet property="lastUpdatedPrice" destination="S9a-s5-S9g" id="9PD-fd-xsp"/>
+                        <outlet property="usdPrice" destination="AmD-e3-1mo" id="0af-Sl-o20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bitcoin" width="900" height="520"/>
+        <image name="ETH" width="920" height="508"/>
+        <image name="dollar" width="920" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
